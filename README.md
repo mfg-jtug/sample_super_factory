@@ -46,12 +46,18 @@
 
 ### 2-1. フォルダ構成（例）
 
-- **build/** &nbsp;← ビルド用作業ディレクトリ  
-  - `ssx_installer.py` &nbsp;… メインスクリプト  
-  - `Shape.zip` &nbsp;… `Shapes/<業種フォルダ>/...` をまとめた ZIP  
-  - `Preferences.tps` &nbsp;… カラーパレット（Tableau 用）  
-  - `ssf_curry.json` &nbsp;… JSON パレット例  
-  - `サンプルスーパーファクトリー.xlsx` &nbsp;… サンプルデータ  
-  - `ssx.png` &nbsp;… スプラッシュ画像
+- **build/**  ← ビルド用作業ディレクトリ  
+  - `ssx_installer.py` … メインスクリプト  
+  - `Shape.zip` … `Shapes/<業種フォルダ>/…` をまとめた ZIP  
+  - `Preferences.tps` … Tableau 用カラーパレット  
+  - `ssf_curry.json` … JSON パレット例  
+  - `サンプルスーパーファクトリー.xlsx` … サンプルデータ  
+  - `ssx.png` … スプラッシュ画像
 
+### 2-2. ビルド（1 行コマンド）
 
+1. コマンドプロンプト / PowerShell で **build フォルダに移動**  
+2. 下記 1 行をコピーして実行
+
+```cmd
+py -3.13 -m PyInstaller --clean --onefile --noconsole --add-data "Shape.zip;." --add-data "ssf_curry.json;." --add-data "サンプルスーパーファクトリー.xlsx;." --add-data "Preferences.tps;." --add-data "ssx.png;." ssx_installer.py
