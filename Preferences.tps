@@ -1,0 +1,141 @@
+<?xml version="1.0" ?>
+<workbook>
+  <preferences>
+    <color-palette name="NCC" type="regular">
+      <color>#EFD9AC</color>
+      <color>#A0D2CF</color>
+      <color>#2F6F4F</color>
+      <color>#EBD06B</color>
+      <color>#B43D32</color>
+      <color>#FFF8E9</color>
+      <color>#346E85</color>
+      <color>#7A522E</color>
+      <color>#d69956</color>
+      <color>#bf5b3e</color>
+    </color-palette>
+    <color-palette name="DKA" type="regular">
+      <color>#5D7B1F</color>
+      <color>#D24429</color>
+      <color>#E6AA3A</color>
+      <color>#FEF5EE</color>
+      <color>#B66C1C</color>
+      <color>#A8481</color>
+      <color>#3C4514</color>
+      <color>#F8E0A0</color>
+      <color>#7B3F00</color>
+      <color>#C2B280</color>
+      <color>#D2B48C</color>
+      <color>#A0522D</color>
+      <color>#CD853F</color>
+      <color>#2f6f4f</color>
+      <color>#BC8F8F</color>
+      <color>#8B4513</color>
+      <color>#DAA520</color>
+      <color>#F4A460</color>
+      <color>#FFE4B5</color>
+      <color>#FFDAB9</color>
+    </color-palette>
+    <color-palette name="GSN" type="regular">
+      <color>#4D0C0E</color>
+      <color>#B88A3E</color>
+      <color>#6F1614</color>
+      <color>#E6D9C6</color>
+      <color>#2D090A</color>
+      <color>#FDF7F0</color>
+      <color>#8C1718</color>
+      <color>#311113</color>
+    </color-palette>
+    <color-palette name="SBC" type="regular">
+      <color>#0E1B36</color>
+      <color>#FADB44</color>
+      <color>#CE1920</color>
+      <color>#2A3C66</color>
+      <color>#FED96D</color>
+      <color>#622119</color>
+      <color>#182742</color>
+      <color>#FEE488</color>
+    </color-palette>
+    <color-palette name="SFC" type="regular">
+      <color>#064C6B</color>
+      <color>#0191A5</color>
+      <color>#F5AE55</color>
+      <color>#F4E9DA</color>
+      <color>#0A7DA0</color>
+      <color>#C2E3E8</color>
+      <color>#182F40</color>
+      <color>#FECAA0</color>
+      <color>#8FD4F2</color>
+      <color>#d69956</color>
+      <color>#bf5b3e</color>
+    </color-palette>
+    <color-palette name="VGC" type="regular">
+      <color>#254E16</color>
+      <color>#348028</color>
+      <color>#92BC58</color>
+      <color>#E85336</color>
+      <color>#FEF8EE</color>
+      <color>#EDB23D</color>
+      <color>#E28635</color>
+      <color>#14521B</color>
+    </color-palette>
+    <color-palette name="LWC" type="regular">
+      <color>#0D2539</color>
+      <color>#F6E08F</color>
+      <color>#AE2C25</color>
+      <color>#5A190F</color>
+      <color>#1C3143</color>
+      <color>#C37B3F</color>
+      <color>#07131F</color>
+      <color>#E5CFA2</color>
+    </color-palette>
+    <color-palette name="TMK" type="regular">
+      <color>#CAA561</color>
+      <color>#64491F</color>
+      <color>#E4C07D</color>
+      <color>#4F391A</color>
+      <color>#F8EFE1</color>
+      <color>#E8D297</color>
+      <color>#B98336</color>
+      <color>#815D29</color>
+    </color-palette>
+    <color-palette name="TUH" type="regular">
+      <color>#2B91CC</color>
+      <color>#0C5A9C</color>
+      <color>#77C6E2</color>
+      <color>#F1D379</color>
+      <color>#E9552C</color>
+      <color>#11667F</color>
+      <color>#F8F0DF</color>
+      <color>#235D3D</color>
+      <color>#bf5b3e</color>
+      <color>#d69956</color>
+    </color-palette>
+    <color-palette name="Classic Japanese Curry" type="regular">
+      <color>#4B3621</color>
+      <color>#8B5A2B</color>
+      <color>#D2B48C</color>
+      <color>#F5DEB3</color>
+      <color>#FFE4B5</color>
+      <color>#CD853F</color>
+      <color>#DEB887</color>
+      <color>#BC8F8F</color>
+      <color>#2f6f4f</color>
+      <color>#8B4513</color>
+      <color>#5C4033</color>
+      <color>#7B3F00</color>
+      <color>#A52A2A</color>
+      <color>#C04000</color>
+      <color>#964B00</color>
+      <color>#D2691E</color>
+      <color>#E97451</color>
+      <color>#F4A460</color>
+      <color>#FFDAB9</color>
+      <color>#FFEBCD</color>
+    </color-palette>
+    <color-palette name="Curry Gradient" type="ordered-sequential">
+      <color>#a0d2cf</color>
+      <color>#ebd06b</color>
+      <color>#b43d32</color>
+    </color-palette>
+  </preferences>
+</workbook>
