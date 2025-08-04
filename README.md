@@ -1,6 +1,6 @@
 # 📦 Sample Super xxx Tableau Installer
 
-`ssx_installer.exe` は **My Tableau Repository** 内へ  
+`ssx_installer_***.exe` は **My Tableau Repository** 内へ  
 業種別リソース（シェイプ／カラーパレット／サンプル Excel など）を
 ワンクリックで配置するインストーラーです。  
 ここでは **エンドユーザー向け手順** と **開発者向けビルド方法** を
@@ -11,15 +11,15 @@
 ## 1. Windowsユーザー向けガイド
 
 ### 1-1. ダウンロード
-1. GitHub の **Actions Artifacts** からお使いのOSに合わせて最新の `ssx_installer_*.zip` を取得。  
-2. 好きな場所（デスクトップ等）に保存して解凍。
-3. ssx_installer_*.exe が出てきたことを確認。
+1. GitHub の **Actions Artifacts** からお使いのOSに合わせて、最新のWindows-installer.zip、もしくは、macOS-installer.zip　を取得。
+2. 好きな場所（デスクトップ等）に保存してzipファイルを解凍。
+4. ssx_installer_*.exe が出てきたことを確認。
 
 ### 1-2. インストール手順
 
 | 手順 | 操作 | 画面例 |
 |------|------|--------|
-| ① | `ssx_installer_*.exe` をダブルクリック | スプラッシュが表示 |
+| ① | `SSX_installer_win.exe` もしくは `SSX_installer_mac.exe` をダブルクリック | スプラッシュが表示 |
 | ② | **OK** をクリック | フォルダー選択ダイアログ |
 | ③ | *My Tableau Repository* を選択 | 例: `C:\Users\<あなた>\Documents\My Tableau Repository` |
 | ④ | 「インストール完了！」ダイアログ | 処理終了 |
