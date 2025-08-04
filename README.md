@@ -7,8 +7,8 @@
 ## 1.ユーザー向けガイド( Windows / Mac )
 
 ### 1-1. ダウンロード
-1. GitHub の **Actions / Artifacts** からお使いのOSに合わせて、最新のWindows-installer.zip、もしくは、macOS-installer.zip　を取得。
-2. 好きな場所（デスクトップ等）に保存してzipファイルを解凍。
+1. GitHub の **Actions --> Artifacts** からお使いのOSに合わせて、最新のWindows-installer.zip、もしくは、macOS-installer.zip　をダウンロード。
+2. お使いのパソコンの任意の場所（デスクトップ等）に保存してzipファイルを解凍。
 4. ssx_installer_*.exe が出てきたことを確認。
 
 ### 1-2. インストール手順
