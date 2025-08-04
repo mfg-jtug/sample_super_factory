@@ -46,3 +46,12 @@
 
 ### 2-1. フォルダ構成（例）
 
+- **build/** &nbsp;← ビルド用作業ディレクトリ  
+  - `ssx_installer.py` &nbsp;… メインスクリプト  
+  - `Shape.zip` &nbsp;… `Shapes/<業種フォルダ>/...` をまとめた ZIP  
+  - `Preferences.tps` &nbsp;… カラーパレット（Tableau 用）  
+  - `ssf_curry.json` &nbsp;… JSON パレット例  
+  - `サンプルスーパーファクトリー.xlsx` &nbsp;… サンプルデータ  
+  - `ssx.png` &nbsp;… スプラッシュ画像
+
+
