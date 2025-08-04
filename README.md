@@ -11,14 +11,15 @@
 ## 1. Windowsユーザー向けガイド
 
 ### 1-1. ダウンロード
-1. GitHub の **Releases** から `ssx_installer.exe` を取得  
-2. 好きな場所（デスクトップ等）に保存
+1. GitHub の **Actions Artifacts** からお使いのOSに合わせて最新の `ssx_installer_*.zip` を取得。  
+2. 好きな場所（デスクトップ等）に保存して解凍。
+3. ssx_installer_*.exe が出てきたことを確認。
 
 ### 1-2. インストール手順
 
 | 手順 | 操作 | 画面例 |
 |------|------|--------|
-| ① | `ssx_installer.exe` をダブルクリック | スプラッシュが表示 |
+| ① | `ssx_installer_*.exe` をダブルクリック | スプラッシュが表示 |
 | ② | **OK** をクリック | フォルダー選択ダイアログ |
 | ③ | *My Tableau Repository* を選択 | 例: `C:\Users\<あなた>\Documents\My Tableau Repository` |
 | ④ | 「インストール完了！」ダイアログ | 処理終了 |
