@@ -1,4 +1,4 @@
-# 📦 Sample Super factory Tableau Installer
+# 📦 Sample Super Factory Tableau Installer
 
 `SSX_installer_***.exe` は **My Tableau Repository** 内へ業種別リソース（シェイプ／カラーパレット／サンプル Excel など）をワンクリックで配置するインストーラーです。ここでは **エンドユーザー向け手順** と **開発者向けビルド方法** を１つのドキュメントにまとめています。
 
