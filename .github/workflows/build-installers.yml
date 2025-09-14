@@ -22,10 +22,10 @@ jobs:
       shell: pwsh
       run: |
         git ls-files | ForEach-Object {
-          $normalized = $_.Normalize([System.Text.NormalizationForm]::FormC)
-          if ($_ -ne $normalized) {
-            Write-Host "Renaming $_ -> $normalized"
-            Rename-Item -Path $_ -NewName $normalized
+          $nfc = $_.Normalize([System.Text.NormalizationForm]::FormC)
+          if ($_ -ne $nfc) {
+            Write-Host "Renaming $_ -> $nfc"
+            Move-Item -LiteralPath $_ -Destination $nfc -Force
           }
         }
 
