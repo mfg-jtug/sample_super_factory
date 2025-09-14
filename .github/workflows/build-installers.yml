@@ -36,7 +36,7 @@ jobs:
           "サンプルスーパーファクトリー_製造技術.xlsx",
           "サンプルスーパーファクトリー_品質管理.xlsx",
           "サンプルスーパーファクトリー_製品マスタ.xlsx",
-          "サンプルスーパーファクトリー利用上の注意点.pdf",
+          "利用上の注意点.pdf",
           "Preferences.tps",
           "ssx.png"
         )
@@ -66,7 +66,7 @@ jobs:
           --add-data="サンプルスーパーファクトリー_製造技術.xlsx:." \
           --add-data="サンプルスーパーファクトリー_品質管理.xlsx:." \
           --add-data="サンプルスーパーファクトリー_製品マスタ.xlsx:." \
-          --add-data="サンプルスーパーファクトリー利用上の注意点.pdf:." \
+          --add-data="利用上の注意点.pdf:." \
           --add-data="Preferences.tps:." \
           --add-data="ssx.png:." \
           ssx_installer.py
