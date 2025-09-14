@@ -16,34 +16,35 @@ jobs:
 
     - run: python -m pip install --upgrade pip pyinstaller
 
-    #─── Windows ────────────────────────────────
-    - name: Normalize filenames to NFC (Windows only)
+    #─── Debug (Windows only) ───────────────────
+    - name: Debug file names (Windows only)
       if: runner.os == 'Windows'
       shell: pwsh
-      run: |
-        git ls-files | ForEach-Object {
-          $nfc = $_.Normalize([System.Text.NormalizationForm]::FormC)
-          if ($_ -ne $nfc) {
-            Write-Host "Renaming $_ -> $nfc"
-            Move-Item -LiteralPath $_ -Destination $nfc -Force
-          }
-        }
+      run: Get-ChildItem -Recurse | ForEach-Object { Write-Host $_.FullName }
 
+    #─── Windows ────────────────────────────────
     - name: Build Windows installer
       if: runner.os == 'Windows'
       shell: pwsh
       run: |
-        py -3.13 -m PyInstaller --clean --onefile --noconsole --name SSX_Installer_win `
-          --add-data="Shape.zip;." `
-          --add-data="ssf_curry.json;." `
-          --add-data="サンプルスーパーファクトリー_生産管理.xlsx;." `
-          --add-data="サンプルスーパーファクトリー_製造技術.xlsx;." `
-          --add-data="サンプルスーパーファクトリー_品質管理.xlsx;." `
-          --add-data="サンプルスーパーファクトリー_製品マスタ.xlsx;." `
-          --add-data="サンプルスーパーファクトリー利用上の注意点.pdf;." `
-          --add-data="Preferences.tps;." `
-          --add-data="ssx.png;." `
-          ssx_installer.py
+        $files = @(
+          "Shape.zip",
+          "ssf_curry.json",
+          "サンプルスーパーファクトリー_生産管理.xlsx",
+          "サンプルスーパーファクトリー_製造技術.xlsx",
+          "サンプルスーパーファクトリー_品質管理.xlsx",
+          "サンプルスーパーファクトリー_製品マスタ.xlsx",
+          "サンプルスーパーファクトリー利用上の注意点.pdf",
+          "Preferences.tps",
+          "ssx.png"
+        )
+        $addData = $files | ForEach-Object {
+          $real = Get-ChildItem -Recurse -Filter $_ | Select-Object -First 1
+          if ($null -eq $real) { throw "File not found: $_" }
+          "--add-data=`"$($real.FullName);.`""
+        }
+        $args = @("--clean","--onefile","--noconsole","--name","SSX_Installer_win") + $addData + "ssx_installer.py"
+        py -3.13 -m PyInstaller @args
 
     #─── macOS ──────────────────────────────────
     - name: Build macOS installer
