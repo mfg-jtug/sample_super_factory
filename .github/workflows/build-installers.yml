@@ -39,11 +39,11 @@ jobs:
         python -m PyInstaller --clean --onefile --windowed --name SSX_Installer_mac \
           --add-data "Shape.zip:." \
           --add-data "ssf_curry.json:." \
-          --add-data "サンプルスーパーファクトリー_生産管理.xlsx;." \ 
-          --add-data "サンプルスーパーファクトリー_製造技術.xlsx;." \
-          --add-data "サンプルスーパーファクトリー_品質管理.xlsx;." \
-          --add-data "サンプルスーパーファクトリー_製品マスタ.xlsx;." \
-          --add-data "サンプルスーパーファクトリー利用上の注意点.pdf;." \
+          --add-data "サンプルスーパーファクトリー_生産管理.xlsx:." \ 
+          --add-data "サンプルスーパーファクトリー_製造技術.xlsx:." \
+          --add-data "サンプルスーパーファクトリー_品質管理.xlsx:." \
+          --add-data "サンプルスーパーファクトリー_製品マスタ.xlsx:." \
+          --add-data "サンプルスーパーファクトリー利用上の注意点.pdf:." \
           --add-data "Preferences.tps:." \
           --add-data "ssx.png:." \
           ssx_installer.py
