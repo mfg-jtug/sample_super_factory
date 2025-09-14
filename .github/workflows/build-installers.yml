@@ -42,12 +42,12 @@ jobs:
         )
         $addData = @()
         foreach ($f in $files) {
-          # ファイル名の末尾部分で部分一致検索して最初の1件を取る
-          $suffix = $f.Split('_')[-1]
-          $real = Get-ChildItem -Recurse | Where-Object { $_.Name -like "*$suffix" } | Select-Object -First 1
+          $real = Get-ChildItem -Recurse | Where-Object { $_.Name -eq $f } | Select-Object -First 1
           if ($null -eq $real) { throw "File not found: $f" }
           Write-Host "Resolved $f -> $($real.FullName)"
-          $addData += "--add-data=`"$($real.FullName);.`""
+          $path = $real.FullName
+          # 正しくクオートして --add-data を構築
+          $addData += "--add-data=`"$path;.`""
         }
         $args = @("--clean","--onefile","--noconsole","--name","SSX_Installer_win") + $addData + "ssx_installer.py"
         py -3.13 -m PyInstaller @args
