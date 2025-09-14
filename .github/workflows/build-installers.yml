@@ -22,10 +22,10 @@ jobs:
       shell: pwsh
       run: |
         git ls-files | ForEach-Object {
-          $normalized = [Text.NormalizationForm]::Normalize($_, [Text.NormalizationForm]::FormC)
+          $normalized = $_.Normalize([System.Text.NormalizationForm]::FormC)
           if ($_ -ne $normalized) {
             Write-Host "Renaming $_ -> $normalized"
-            Rename-Item $_ $normalized
+            Rename-Item -Path $_ -NewName $normalized
           }
         }
 
